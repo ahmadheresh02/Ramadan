@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ramadan Initiatives</title>
+  <link rel="stylesheet" href="../style/hersh.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-moon"></i> Ramadan Initiatives
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#initiatives">Initiatives</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#donate">Donate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#forum">Community Forum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <!-- User Name Display -->
+          <span id="userNameDisplay" class="me-3 d-none">Welcome, <span id="userName"></span>!</span>
+          <!-- Logout Button -->
+          <button id="logoutButton" class="btn btn-outline-light d-none">Logout</button>
+          <!-- Sign In Button -->
+          <button class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#authModal">Sign In</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home" 
+  style="background-image: url('./img/landddddddddddddddddddddddddddddd.jpg!w700wp'); 
+         background-repeat: no-repeat; 
+         background-size: cover; 
+         background-position: center;">
+  <div class="container" style="background-color: transparent">
+      <h1>Make a Difference This Ramadan</h1>
+      <p >Join our community initiatives to help those in need during the holy month of Ramadan. Together, we can spread hope, kindness, and compassion.</p>
+      <div>
+   
+        <a href="#donate" class="btn btn-outline-light btn-lg">Donate Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Initiatives -->
+  <section class="py-5">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Initiatives</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="featured-card card h-100">
+            <img src="./img/iftar.jpg" class="card-img-top" alt="Food Distribution">
+            <div class="card-body">
+              <h4 class="card-title">Food Distribution</h4>
+              <p class="card-text">Provide iftar meals to families in need throughout the holy month of Ramadan.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-success"><i class="fas fa-users me-2"></i>157 Volunteers</span>
+                <a href="#" class="btn btn-sm btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="featured-card card h-100">
+            <img src="./img/EducationProgram.jpeg" class="card-img-top" alt="Education Program">
+            <div class="card-body">
+              <h4 class="card-title">Education Program</h4>
+              <p class="card-text">Support educational initiatives for underprivileged children during Ramadan.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-success"><i class="fas fa-users me-2"></i>94 Volunteers</span>
+                <a href="#" class="btn btn-sm btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="featured-card card h-100">
+            <img src="./img/elderly.webp" class="card-img-top" alt="Community Support">
+            <h4 class="card-title">Community Support</h4>
+            <p class="card-text">Help elderly and vulnerable community members with essential needs during Ramadan.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="text-success"><i class="fas fa-users me-2"></i>123 Volunteers</span>
+              <a href="#" class="btn btn-sm btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Initiatives Section -->
+<section class="py-5 bg-light" id="initiatives">
+<div class="container">
+  <div class="section-header">
+    <h2>Our Initiatives</h2>
+  </div>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="initiative-card card h-100">
+        <img src="./img/iftarforfam.jpg" class="card-img-top" alt="Food Distribution">
+        <div class="card-body">
+          <h5 class="card-title">Food Distribution</h5>
+          <p class="card-text">Provide iftar meals to families in need throughout the holy month.</p>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-check-circle text-success me-2"></i>Daily iftar meals</li>
+            <li><i class="fas fa-check-circle text-success me-2"></i>Ramadan food packages</li>
+            <li><i class="fas fa-check-circle text-success me-2"></i>Community iftars</li>
+          </ul>
+          <a href="#" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#volunteerModal">Volunteer</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="initiative-card card h-100">
+        <img src="./img/underprev.webp" class="card-img-top" alt="Education Program">
+        <div class="card-body">
+          <h5 class="card-title">Education Program</h5>
+          <p class="card-text">Support educational initiatives for underprivileged children.</p>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-check-circle text-success me-2"></i>School supplies donation</li>
+            <li><i class="fas fa-check-circle text-success me-2"></i>After-school tutoring</li>
+            <li><i class="fas fa-check-circle text-success me-2"></i>Online learning resources</li>
+          </ul>
+          <a href="#" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#volunteerModal">Volunteer</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="initiative-card card h-100">
+        <img src="./img/JDC_channukah_celebration.webp" class="card-img-top" alt="Community Support">
+        <div class="card-body">
+          <h5 class="card-title">Community Support</h5>
+          <p class="card-text">Help elderly and vulnerable community members with essential needs.</p>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-check-circle text-success me-2"></i>Grocery shopping assistance</li>
+            <li><i class="fas fa-check-circle text-success me-2"></i>Home cleaning services</li>
+            <li><i class="fas fa-check-circle text-success me-2"></i>Medicine delivery</li>
+          </ul>
+          <a href="#" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#volunteerModal">Volunteer</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="initiative-card card h-100">
+        <img src="./img/health.jpg" class="card-img-top" alt="Healthcare Services">
+        <div class="card-body">
+          <h5 class="card-title">Healthcare Services</h5>
+          <p class="card-text">Free medical checkups and care for those who cannot afford it.</p>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-check-circle text-success me-2"></i>Basic health checkups</li>
+            <li><i class="fas fa-check-circle text-success me-2"></i>Medicine distribution</li>
+            <li><i class="fas fa-check-circle text-success me-2"></i>Health awareness sessions</li>
+          </ul>
+          <a href="#" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#volunteerModal">Volunteer</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="initiative-card card h-100">
+        <img src="./img/Students-standing-outside-looking-at-textbooks-Feature-Image.jpg" class="card-img-top" alt="Skill Development">
+        <div class="card-body">
+          <h5 class="card-title">Skill Development</h5>
+          <p class="card-text">Teach practical skills to help people become financially independent.</p>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-check-circle text-success me-2"></i>Computer literacy classes</li>
+            <li><i class="fas fa-check-circle text-success me-2"></i>Vocational training</li>
+            <li><i class="fas fa-check-circle text-success me-2"></i>Resume building workshops</li>
+          </ul>
+          <a href="#" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#volunteerModal">Volunteer</a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+</section>
+
+<!-- Donation Section -->
+<section class="py-5" id="donate">
+<div class="container">
+  <div class="section-header">
+    <h2>Support Our Cause</h2>
+  </div>
+  <div class="row">
+    <div class="col-lg-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h4 class="card-title">Make a Donation</h4>
+          <p class="card-text">Your generous contribution will help us serve more people in need during Ramadan.</p>
+          <form id="donationForm">
+            <div class="mb-3">
+              <label for="donationAmount" class="form-label">Donation Amount</label>
+              <div class="input-group">
+                <span class="input-group-text">$</span>
+                <input type="number" class="form-control" id="donationAmount" placeholder="Enter amount">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Donation Frequency</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="donationFrequency" id="oneTime" checked>
+                <label class="form-check-label" for="oneTime">One-time</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="donationFrequency" id="monthly">
+                <label class="form-check-label" for="monthly">Monthly</label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Select Initiative</label>
+              <select class="form-select" id="donationInitiative">
+                <option value="general">General Fund</option>
+                <option value="food">Food Distribution</option>
+                <option value="education">Education Program</option>
+                <option value="community">Community Support</option>
+                <option value="healthcare">Healthcare Services</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Donate Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h4 class="card-title">Other Ways to Help</h4>
+          <div class="mb-4">
+            <h5><i class="fas fa-hands-helping me-2 text-primary"></i>Volunteer Your Time</h5>
+            <p>Join our team of dedicated volunteers who make our initiatives possible.</p>
+            <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#volunteerModal">Learn More</a>
+          </div>
+          <div class="mb-4">
+            <h5><i class="fas fa-box-open me-2 text-primary"></i>Donate Supplies</h5>
+            <p>Contribute essential items like food, clothing, school supplies, and more.</p>
+            <a href="#" class="btn btn-outline-primary btn-sm">View Needed Items</a>
+          </div>
+          <div>
+            <h5><i class="fas fa-bullhorn me-2 text-primary"></i>Spread Awareness</h5>
+            <p>Help us reach more people by sharing our initiatives on social media.</p>
+            <div class="social-links mt-3">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="py-5">
+  <div class="container">
+      <h2>📊 Donation List</h2>
+      <table class="table table-striped">
+          <thead>
+              <tr>
+                  <th>📧 User</th>
+                  <th>💲 Amount</th>
+                  <th>⏳ Frequency</th>
+                  <th>🎯 Initiative</th>
+                  <th>📅 Date</th>
+              </tr>
+          </thead>
+          <tbody id="donationsTableBody">
+              <!-- Data will be inserted here -->
+          </tbody>
+      </table>
+  </div>
+</section>
+
+
+<!-- Testimonials -->
+<section class="py-5 bg-light">
+<div class="container">
+  <div class="section-header">
+    <h2>Volunteer Testimonials</h2>
+  </div>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="testimonial-card">
+        <div class="quote">
+          "Volunteering during Ramadan has been the most rewarding experience of my life. Seeing the smiles on people's faces when we deliver iftar meals is priceless."
+        </div>
+        <div class="user-info">
+          <img src="/api/placeholder/100/100" alt="User" class="user-avatar">
+          <div>
+            <h5 class="mb-0">Ahmed Hassan</h5>
+            <p class="text-muted mb-0">Food Distribution Volunteer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="testimonial-card">
+        <div class="quote">
+          "Teaching children from underprivileged backgrounds has opened my eyes to how much we take for granted. These kids are so eager to learn and I'm grateful to be part of their journey."
+        </div>
+        <div class="user-info">
+          <img src="/api/placeholder/100/100" alt="User" class="user-avatar">
+          <div>
+            <h5 class="mb-0">Sara Ahmed</h5>
+            <p class="text-muted mb-0">Education Program Volunteer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="testimonial-card">
+        <div class="quote">
+          "Helping elderly community members during Ramadan has been a blessing. The wisdom they share and the gratitude they show makes every minute worthwhile."
+        </div>
+        <div class="user-info">
+          <img src="/api/placeholder/100/100" alt="User" class="user-avatar">
+          <div>
+            <h5 class="mb-0">Malik Johnson</h5>
+            <p class="text-muted mb-0">Community Support Volunteer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Community Forum -->
+<section class="py-5" id="forum">
+<div class="container">
+  <div class="section-header">
+    <h2>Community Forum</h2>
+  </div>
+  <div class="row">
+    <div class="col-lg-8">
+      <!-- Forum Posts -->
+      <div class="forum-card">
+        <div class="forum-card-header">
+          <h5 class="mb-0">Tips for First-Time Volunteers</h5>
+          <span class="badge bg-primary">Discussion</span>
+        </div>
+        <div class="forum-card-body">
+          <p>Hello everyone! I'm planning to volunteer for the food distribution initiative. Any tips for a first-timer?</p>
+        </div>
+        <div class="forum-card-footer">
+          <div class="d-flex justify-content-between">
+            <span><i class="fas fa-user me-1"></i> Posted by Farah</span>
+            <span><i class="fas fa-calendar me-1"></i> March 15, 2025</span>
+            <span><i class="fas fa-comments me-1"></i> 12 Replies</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="forum-card mt-4">
+        <div class="forum-card-header">
+          <h5 class="mb-0">Community Iftar Experience</h5>
+          <span class="badge bg-success">Experience</span>
+        </div>
+        <div class="forum-card-body">
+          <p>I wanted to share my experience organizing a community iftar last weekend. It was amazing to see everyone come together!</p>
+        </div>
+        <div class="forum-card-footer">
+          <div class="d-flex justify-content-between">
+            <span><i class="fas fa-user me-1"></i> Posted by Yusuf</span>
+            <span><i class="fas fa-calendar me-1"></i>
+                <span><i class="fas fa-calendar me-1"></i> March 14, 2025</span>
+                <span><i class="fas fa-comments me-1"></i> 8 Replies</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="forum-card mt-4">
+            <div class="forum-card-header">
+              <h5 class="mb-0">Educational Resources for Children</h5>
+              <span class="badge bg-info">Resources</span>
+            </div>
+            <div class="forum-card-body">
+              <p>I've compiled a list of educational resources that can help children learn about Ramadan. Would anyone be interested?</p>
+            </div>
+            <div class="forum-card-footer">
+              <div class="d-flex justify-content-between">
+                <span><i class="fas fa-user me-1"></i> Posted by Amina</span>
+                <span><i class="fas fa-calendar me-1"></i> March 12, 2025</span>
+                <span><i class="fas fa-comments me-1"></i> 15 Replies</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- New Post Form -->
+          <div class="card mt-4">
+            <div class="card-body">
+              <h5 class="card-title">Start a New Discussion</h5>
+              <form id="newPostForm">
+                <!-- Title Field -->
+                <div class="mb-3">
+                  <label for="postTitle" class="form-label">Title</label>
+                  <input type="text" class="form-control" id="postTitle" placeholder="Enter discussion title" disabled>
+                </div>
+                <!-- Category Field -->
+                <div class="mb-3">
+                  <label for="postCategory" class="form-label">Category</label>
+                  <select class="form-select" id="postCategory" disabled>
+                    <option value="discussion">Discussion</option>
+                    <option value="experience">Experience</option>
+                    <option value="question">Question</option>
+                    <option value="resources">Resources</option>
+                  </select>
+                </div>
+                <!-- Content Field -->
+                <div class="mb-3">
+                  <label for="postContent" class="form-label">Content</label>
+                  <textarea class="form-control" id="postContent" rows="4" placeholder="Write your post here..." disabled></textarea>
+                </div>
+                <!-- Post Button -->
+                <button type="submit" class="btn btn-primary" id="postButton" disabled>Post Discussion</button>
+              </form>
+              <!-- Get Replies Button -->
+              <button type="button" class="btn btn-secondary mt-3" id="getRepliesButton" style="display: none;">Get Replies</button>
+              <!-- Replies Display Area -->
+              <div id="repliesDisplay" class="mt-3" style="display: none;">
+                <h6>Replies:</h6>
+                <ul id="repliesList" class="list-group"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4">
+          <!-- Forum Sidebar -->
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Forum Categories</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Discussions
+                  <span class="badge bg-primary rounded-pill">24</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Experiences
+                  <span class="badge bg-primary rounded-pill">18</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Questions
+                  <span class="badge bg-primary rounded-pill">32</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Resources
+                  <span class="badge bg-primary rounded-pill">15</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Top Contributors</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex align-items-center">
+                  <img src="" alt="User" class="rounded-circle me-2">
+                  <div>
+                    <h6 class="mb-0">Ahmad Ali</h6>
+                    <small class="text-muted">45 Posts</small>
+                  </div>
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                  <img src="" alt="User" class="rounded-circle me-2">
+                  <div>
+                    <h6 class="mb-0">Ammar Ma</h6>
+                    <small class="text-muted">32 Posts</small>
+                  </div>
+                </li>
+                <li class="list-group-item d-flex align-items-center">
+                  <img src="" alt="User" class="rounded-circle me-2">
+                  <div>
+                    <h6 class="mb-0">Motaz Mallah</h6>
+                    <small class="text-muted">29 Posts</small>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Forum Rules</h5>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-check-circle text-success me-2"></i>Be respectful to others</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i>No hate speech or offensive content</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i>Stay on topic</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i>No self-promotion or spam</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i>Respect privacy of others</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Us</h2>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <img src="./img/stock.webp" alt="About Us" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-lg-6">
+          <h3>Our Mission</h3>
+          <p>We are dedicated to bringing communities together during the holy month of Ramadan to help those in need. Our mission is to spread compassion, kindness, and hope through various initiatives that address the needs of vulnerable populations.</p>
+          
+          <h3>Our Vision</h3>
+          <p>We envision a world where no one goes hungry, where education is accessible to all, and where communities support each other through times of need. We believe that Ramadan is not just a time for personal reflection, but also a time to reach out and make a positive impact in the lives of others.</p>
+          
+          <h3>Our Values</h3>
+          <div class="row mt-3">
+            <div class="col-6 mb-3">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-heart text-primary fs-4 me-2"></i>
+                <h5 class="mb-0">Compassion</h5>
+              </div>
+            </div>
+            <div class="col-6 mb-3">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-hands-helping text-primary fs-4 me-2"></i>
+                <h5 class="mb-0">Service</h5>
+              </div>
+            </div>
+            <div class="col-6 mb-3">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-balance-scale text-primary fs-4 me-2"></i>
+                <h5 class="mb-0">Integrity</h5>
+              </div>
+            </div>
+            <div class="col-6 mb-3">
+              <div class="d-flex align-items-center">
+                <i class="fas fa-users text-primary fs-4 me-2"></i>
+                <h5 class="mb-0">Community</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section class="py-5" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="card h-100">
+            <div class="card-body">
+              <h4 class="card-title">Get in Touch</h4>
+              <form id="contactForm">
+                <div class="mb-3">
+                  <label for="contactName" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="contactName" placeholder="Your name">
+                </div>
+                <div class="mb-3">
+                  <label for="contactEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="contactEmail" placeholder="Your email">
+                </div>
+                <div class="mb-3">
+                  <label for="contactSubject" class="form-label">Subject</label>
+                  <input type="text" class="form-control" id="contactSubject" placeholder="Subject">
+                </div>
+                <div class="mb-3">
+                  <label for="contactMessage" class="form-label">Message</label>
+                  <textarea class="form-control" id="contactMessage" rows="5" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h4 class="card-title">Contact Information</h4>
+              <div class="d-flex mb-4">
+                <i class="fas fa-map-marker-alt text-primary fs-4 me-3 mt-1"></i>
+                <div>
+                  <h5>Address</h5>
+                  <p>123 Community Center,<br>Main Street, City,<br>State, Country</p>
+                </div>
+              </div>
+              <div class="d-flex mb-4">
+                <i class="fas fa-phone-alt text-primary fs-4 me-3 mt-1"></i>
+                <div>
+                  <h5>Phone</h5>
+                  <p>+1 (555) 123-4567</p>
+                </div>
+              </div>
+              <div class="d-flex mb-4">
+                <i class="fas fa-envelope text-primary fs-4 me-3 mt-1"></i>
+                <div>
+                  <h5>Email</h5>
+                  <p>info@ramadaninitiatives.org</p>
+                </div>
+              </div>
+              <div class="d-flex">
+                <i class="fas fa-clock text-primary fs-4 me-3 mt-1"></i>
+                <div>
+                  <h5>Office Hours</h5>
+                  <p>Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday: 10:00 AM - 2:00 PM<br>Sunday: Closed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+          <h5>About</h5>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Our Partners</a></li>
+            <li><a href="#">Annual Reports</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+          <h5>Initiatives</h5>
+          <ul class="footer-links">
+            <li><a href="#initiatives">Food Distribution</a></li>
+            <li><a href="#initiatives">Education Program</a></li>
+            <li><a href="#initiatives">Community Support</a></li>
+            <li><a href="#initiatives">Healthcare Services</a></li>
+            <li><a href="#initiatives">Skill Development</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+          <h5>Get Involved</h5>
+          <ul class="footer-links">
+            <li><a href="#donate">Donate</a></li>
+            <li><a href="#">Volunteer</a></li>
+            <li><a href="#">Fundraise</a></li>
+            <li><a href="#">Partner With Us</a></li>
+            <li><a href="#">Corporate Sponsorship</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <h5>Connect With Us</h5>
+          <p>Follow us on social media to stay updated with our latest initiatives and events.</p>
+          <div class="social-links mb-3">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+          <div>
+            <h5>Newsletter</h5>
+            <p>Subscribe to our newsletter to receive updates.</p>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Your email">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Ramadan Initiatives. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Auth Modal -->
+  <div class="modal fade auth-modal" id="authModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Join Our Community</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <ul class="nav nav-tabs" id="authTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Login</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">Register</button>
+              </li>
+            </ul>
+              <div class="tab-content p-3" id="authTabsContent">
+                <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                  <form id="loginForm">
+                    <div class="mb-3">
+                      <label for="loginEmail" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                      <label for="loginPassword" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="rememberMe">
+                      <label class="form-check-label" for="rememberMe">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                    <div class="text-center mt-3">
+                      <a href="#" class="text-decoration-none">Forgot Password?</a>
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                  <form id="registerForm">
+                    <div class="mb-3">
+                      <label for="registerName" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="registerName" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="registerEmail" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="registerEmail" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                      <label for="registerPassword" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="registerPassword" placeholder="Create a password">
+                    </div>
+                    <div class="mb-3">
+                      <label for="registerConfirmPassword" class="form-label">Confirm Password</label>
+                      <input type="password" class="form-control" id="registerConfirmPassword" placeholder="Confirm your password">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="termsAgree">
+                      <label class="form-check-label" for="termsAgree">I agree to the <a href="#">Terms & Conditions</a></label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Register</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Volunteer Modal -->
+      <div class="modal fade" id="volunteerModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Volunteer Application</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="volunteerForm">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="volunteerName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="volunteerName" placeholder="Enter your full name">
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="volunteerEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="volunteerEmail" placeholder="Enter your email">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="volunteerPhone" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="volunteerPhone" placeholder="Enter your phone number">
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="volunteerAge" class="form-label">Age</label>
+                    <input type="number" class="form-control" id="volunteerAge" placeholder="Enter your age">
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="volunteerAddress" class="form-label">Address</label>
+                  <textarea class="form-control" id="volunteerAddress" rows="2" placeholder="Enter your address"></textarea>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Select Initiative(s)</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="foodDistribution">
+                    <label class="form-check-label" for="foodDistribution">Food Distribution</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="educationProgram">
+                    <label class="form-check-label" for="educationProgram">Education Program</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="communitySupport">
+                    <label class="form-check-label" for="communitySupport">Community Support</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="healthcareServices">
+                    <label class="form-check-label" for="healthcareServices">Healthcare Services</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="skillDevelopment">
+                    <label class="form-check-label" for="skillDevelopment">Skill Development</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label">Availability</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="weekdays">
+                      <label class="form-check-label" for="weekdays">Weekdays</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="weekends">
+                      <label class="form-check-label" for="weekends">Weekends</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="evenings">
+                      <label class="form-check-label" for="evenings">Evenings</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label class="form-label">Preferred Time Commitment</label>
+                    <select class="form-select" id="timeCommitment">
+                      <option value="">Select time commitment</option>
+                      <option value="few-hours">A few hours weekly</option>
+                      <option value="once-week">Once a week</option>
+                      <option value="multiple-days">Multiple days a week</option>
+                      <option value="full-time">Full time during Ramadan</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="volunteerExperience" class="form-label">Relevant Experience</label>
+                  <textarea class="form-control" id="volunteerExperience" rows="3" placeholder="Please share any relevant volunteer experience"></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="volunteerMotivation" class="form-label">Why do you want to volunteer?</label>
+                  <textarea class="form-control" id="volunteerMotivation" rows="3" placeholder="Please share your motivation to volunteer with us"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Application</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- JavaScript -->
+      <!-- Bootstrap JS CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+      <script src="../js/mootaz.js"></script>
+      <script src="./js/omar.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const contactForm = document.getElementById('contactForm');
+        
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+        
+                // التأكد من وجود مستخدم مسجل الدخول
+                const storedUser = localStorage.getItem('user');
+                if (!storedUser) {
+                    alert('Please log in to submit the contact form.');
+                    return;
+                }
+        
+                // جلب بيانات المستخدم الحالي
+                const user = JSON.parse(storedUser);
+                const contactName = document.getElementById('contactName').value;
+                const contactEmail = document.getElementById('contactEmail').value;
+                const contactSubject = document.getElementById('contactSubject').value;
+                const contactMessage = document.getElementById('contactMessage').value;
+        
+                // إنشاء كائن يحتوي على بيانات الرسالة
+                const contactData = {
+                    name: contactName,
+                    email: contactEmail,
+                    subject: contactSubject,
+                    message: contactMessage,
+                    date: new Date().toLocaleString()
+                };
+        
+                // تخزين بيانات الاتصال الخاصة بهذا المستخدم في localStorage
+                let userContacts = JSON.parse(localStorage.getItem(`contacts_${user.email}`)) || [];
+                userContacts.push(contactData);
+                console.log(userContacts,"test array");
+                
+                localStorage.setItem(`contacts_${user.email}`, JSON.stringify(userContacts));
+        
+                alert('Your message has been sent successfully!');
+                contactForm.reset(); // مسح الحقول بعد الإرسال
+            });
+        });
+        </script>
+        
+ <script> document.addEventListener('DOMContentLoaded', () => {
+  displayDonations(); // استدعاء الدالة عند تحميل الصفحة
+
+  function displayDonations() {
+      const donationsTableBody = document.getElementById('donationsTableBody');
+      donationsTableBody.innerHTML = ''; // تفريغ الجدول قبل إضافة البيانات
+
+      const donations = JSON.parse(localStorage.getItem('donations')) || [];
+
+      if (donations.length === 0) {
+          donationsTableBody.innerHTML = `<tr><td colspan="5" class="text-center">لا يوجد تبرعات حتى الآن 😔</td></tr>`;
+          return;
+      }
+
+      donations.forEach(donation => {
+          const row = `
+              <tr>
+                  <td>${donation.user}</td>
+                  <td>$${donation.amount}</td>
+                  <td>${donation.frequency === 'oneTime' ? 'مرة واحدة' : 'شهري'}</td>
+                  <td>${getInitiativeName(donation.initiative)}</td>
+                  <td>${donation.date}</td>
+              </tr>
+          `;
+          donationsTableBody.innerHTML += row;
+      });
+  }
+
+  function getInitiativeName(value) {
+      const initiatives = {
+          general: '💰 الصندوق العام',
+
+
+
+
+
+
+
+
+
+          food: '🍲 توزيع الطعام',
+          education: '📚 دعم التعليم',
+          community: '🏡 دعم المجتمع',
+          healthcare: '🏥 الخدمات الصحية'
+      };
+      return initiatives[value] || 'غير معروف';
+  }
+});
+</script>
+
+        <script src="./js/donat.js"></script>
+    </body>
+    </html>
+
